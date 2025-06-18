@@ -14,10 +14,12 @@ This repository contains the code and data for the paper "Effective strategies f
 
 The project relies on specific data and parameters organized as follows:
 
-* **`data/` folder**: This directory contains the input datasets crucial for the simulations.
+* **`data/` folder**: This directory contains sample input datasets for the simulations.
     * `covid-19 cases & death`: Historical data on COVID-19 cases and deaths.
     * `population`: Population data relevant to the simulation.
     * `vaccine`: Vaccination data.
+    * `beds`: Total bed data.
+    * `current icu`: ICU data.
 
 * **`parameters/` folder**: This directory stores key parameters used in the model.
     * `beta_level`: Transmission rate (beta) values corresponding to different NPI levels.
