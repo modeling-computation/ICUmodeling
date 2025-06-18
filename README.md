@@ -36,4 +36,3 @@ The simulations are executed via scripts located in the `scenario/` folder:
 
 All simulation outputs and results are saved in the **`result/` folder**.
 
----
