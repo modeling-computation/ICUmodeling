@@ -22,14 +22,14 @@ The project relies on specific data and parameters organized as follows:
     * `current icu`: ICU data.
 
 * **`parameters/` folder**: This directory stores key parameters used in the model.
-    * `beta_level`: Transmission rate (beta) values corresponding to different NPI levels.
+    * `beta_level`: beta values corresponding to different NPI levels.
     * `icu_admission_rate`: Rate of ICU admissions.
     * `severe_case_fatality_rate`: Fatality rate for severe cases.
     * ... (add any other relevant parameters here)
 
 ### 2. Scenario Execution
 
-The simulations are executed via scripts located in the `scenario/` folder:
+The simulations are executed via scripts located in the **`scenario/` folder**:
 
 * **`scenario/S1.m`**: This script runs the **NPI scenario** simulations.
 * **`scenario/S2.m`**: This script runs the **comprehensive scenario** simulations.
