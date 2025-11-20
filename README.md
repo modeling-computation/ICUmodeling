@@ -3,12 +3,12 @@
 Geunsoo Jang, Su Min Park, Yongin Choi, Sung June Choi, and Hyojung Lee
 
 ## Abstract
-To help mitigate ICU overload during pandemic surges, we propose and evaluate strategies that adjust non-pharmaceutical intervention (NPI) levels and ICU-bed capacity. Using Korea’s ICU data, we developed an age-structured model incorporating implementation delays and IOR (ICU-occupancy rate) thresholds. Simulation results suggest that to maintain an IOR below 0.8, NPI Level 3 or higher is needed, particularly when a seven-day policy delay exists. If only NPI Level 1 is applied, early intervention—when IOR exceeds 0.6—is required to keep the peak IOR under control. Additionally, a minimum 10% increase in ICU-bed capacity is necessary under delayed responses. Expanding bed capacity at the IOR threshold of 0.6 further supports IOR management. These findings offer practical guidance for ICU resource planning and policy design during health crises
+During the COVID-19 pandemic, fluctuations in daily cases and severe infections posed substantial challenges to healthcare capacity, particularly in intensive care units (ICUs). This period underscored the need for data-driven decision-making systems to efficiently manage the limited healthcare resources. Therefore, to mitigate ICU overload during pandemic surges, we evaluated strategies to tighten non-pharmaceutical interventions (NPI) and expand ICU-bed capacity. We developed an age-structured transmission model incorporating ICU occupancy rate (IOR)-based activation thresholds, decision-to-action delays, and combined interventions targeting both demand (NPI intensity) and supply (capacity expansion). Our results indicated that during a seven-day delay in implementing control measures, maintaining the IOR below a high-occupancy benchmark of 0.8 requires escalation to at least NPI Level 3 when activation occurs before the IOR exceeds 0.5. When NPIs are strengthened with ICU-bed expansion, maintaining an IOR below 0.8 becomes feasible under milder NPIs (e.g., NPI Level 1), provided activation remains timely (before the IOR exceeds 0.6) and capacity increases by at least 10%. Escalation to NPI Level 3 further reduces the required expansion and yields control that is more stable across conditions. These findings provide a data-driven basis for ICU resource planning and policy design during health crises. The framework can inform the assessment of adaptive intervention strategies and support evidence-based healthcare resource planning in future health emergencies beyond the COVID-19 context
 
 Link to the paper: 
 
 ## Code Description
-This repository contains the code and data for the paper "Effective strategies for managing intensive care unit bed capacity during the COVID-19 pandemic".
+This repository contains the code and data for the paper "Modeling-based strategies for ICU-bed management during the COVID-19 pandemic".
 
 ### 1. Data and Parameters Overview
 
