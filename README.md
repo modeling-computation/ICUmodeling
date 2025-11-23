@@ -8,7 +8,7 @@ During the COVID-19 pandemic, fluctuations in daily cases and severe infections 
 Link to the paper: 
 
 ## Code Description
-This repository contains the code and data for the paper "Effective strategies for managing intensive care unit bed capacity during the COVID-19 pandemic".
+This repository contains the code and data for the paper "Modeling-based strategies for ICU-bed management during the COVID-19 pandemic".
 
 ### 1. Data and Parameters Overview
 
