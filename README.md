@@ -20,25 +20,23 @@ The project relies on specific data and parameters organized as follows:
     * `vaccine`: Vaccination data.
     * `beds`: Total bed data.
     * `current icu`: ICU data.
-    * `severe_rate`: Fatality rate for severe cases.
-    * `initial`: Initial state.
-    * `unreported_rate`: Unreported rate by age-group.
+    * `severe_rate`: Severity rate by age group.
+    * `initial`: Initial compartment values for model initialization.
+    * `unreported_rate`: Age-specific under-reporting rates.
   
 ### 2. Fitting Execution
 
 The calibration and model fitting are executed via scripts located in the **`Fitting/` folder**:
 
-* **`Fitting/fit_run.m`**: This script runs the fitting procedure and calibrates model parameters using observed ICU data/COVID-19 cases/COVID-19 death.
-* **`Fitting/odef.m`**: This script contains the main ODE system
-* **`Fitting/odeoperation.m`**: Implements the simulation workflow, performing operations such as parameter loading, preprocessing, and running the ODE solver for the fitting procedure
-* **`Fitting/odeoperation_ode.m`**: A lower-level module that defines the ODE operations used inside the solver
+* **`Fitting/fit_run.m`**: Executes the fitting workflow and calibrates model parameters using observed ICU cases, confrimed cases, and death data.
+* **`Fitting/odef.m`**: Defines the main system of age-structured ODEs describing transmission dynamics, disease progression, and ICU transitions.
 
 ### 3. Scenario Execution
 
 The simulations are executed via scripts located in the **`scenario/` folder**:
 
-* **`scenario/S1.m`**: This script runs the **NPI scenario** simulations.
-* **`scenario/S2.m`**: This script runs the **comprehensive scenario** simulations.
+* **`scenario/S1.m`**: Runs the **NPI-only scenario** simulations.
+* **`scenario/S2.m`**: Runs the **Comprehensive scenario with ICU-bed management** simulations.
 
 ### 4. Results Storage
 
