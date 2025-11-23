@@ -14,27 +14,33 @@ This repository contains the code and data for the paper "Modeling-based strateg
 
 The project relies on specific data and parameters organized as follows:
 
-* **`data/` folder**: This directory contains sample input datasets for the simulations.
+* **`data/` folder**: This directory contains sample input datasets for the simulations and key parameters used in the model.
     * `covid-19 cases & death`: Historical data on COVID-19 cases and deaths.
     * `population`: Population data relevant to the simulation.
     * `vaccine`: Vaccination data.
     * `beds`: Total bed data.
     * `current icu`: ICU data.
+    * `severe_rate`: Fatality rate for severe cases.
+    * `initial`: Initial state.
+    * `unreported_rate`: Unreported rate by age-group.
+  
+### 2. Fitting Execution
 
-* **`parameters/` folder**: This directory stores key parameters used in the model.
-    * `beta_level`: beta values corresponding to different NPI levels.
-    * `icu_admission_rate`: Rate of ICU admissions.
-    * `severe_case_fatality_rate`: Fatality rate for severe cases.
-    * ... (add any other relevant parameters here)
+The calibration and model fitting are executed via scripts located in the **`Fitting/` folder**:
 
-### 2. Scenario Execution
+* **`Fitting/fit_run.m`**: This script runs the fitting procedure and calibrates model parameters using observed ICU data/COVID-19 cases/COVID-19 death.
+* **`Fitting/odef.m`**: This script contains the main ODE system
+* **`Fitting/odeoperation.m`**: Implements the simulation workflow, performing operations such as parameter loading, preprocessing, and running the ODE solver for the fitting procedure
+* **`Fitting/odeoperation_ode.m`**: A lower-level module that defines the ODE operations used inside the solver
+
+### 3. Scenario Execution
 
 The simulations are executed via scripts located in the **`scenario/` folder**:
 
 * **`scenario/S1.m`**: This script runs the **NPI scenario** simulations.
 * **`scenario/S2.m`**: This script runs the **comprehensive scenario** simulations.
 
-### 3. Results Storage
+### 4. Results Storage
 
 All simulation outputs and results are saved in the **`result/` folder**.
 
